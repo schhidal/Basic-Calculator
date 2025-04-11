@@ -8,7 +8,7 @@ public class MyFirstCalculator {
 
         System.out.print("Enter your second number: ");
         int number2 = input.nextInt();
-System.out.println();
+
         System.out.println("Your sum is : " + add(number1, number2));
         System.out.println("Your difference is : " + sub(number1, number2));
         System.out.println("Your product is : " + multi(number1, number2));
