@@ -11,6 +11,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class SwingApp {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // Create Frame
         JFrame frame = new JFrame();
@@ -68,8 +71,8 @@ public class SwingApp {
         femaleButton.setBounds(300, 160, 40, 30);
         frame.add(femaleButton);
 
-        // Group the raio button so only one can be selecte at a time
-        ButtonGroup group = new ButtonGroup();
+         // Group the radio button so only one can be selecte at a time
+        ButtonGroup group = new ButtonGroup(); 
         group.add(maleButton);
         group.add(femaleButton);
 
