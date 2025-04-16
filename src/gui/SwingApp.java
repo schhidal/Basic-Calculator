@@ -1,5 +1,6 @@
 package gui;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -67,6 +68,11 @@ public class SwingApp {
         femaleButton.setBounds(300, 160, 40, 30);
         frame.add(femaleButton);
 
+        // Group the raio button so only one can be selecte at a time
+        ButtonGroup group = new ButtonGroup();
+        group.add(maleButton);
+        group.add(femaleButton);
+
         JLabel city = new JLabel("City : ");
         city.setBounds(50, 200, 100, 30);
         frame.add(city);
@@ -83,7 +89,7 @@ public class SwingApp {
 
         JLabel register = new JLabel("Register");
         register.setBounds(250, 240, 100, 30);
-        frame.add(register);
+        frame.add(register); 
 
         JTextField registerField = new JTextField();
         registerField.setBounds(200, 240, 150, 30);
