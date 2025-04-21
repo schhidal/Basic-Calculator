@@ -12,8 +12,8 @@ try{
     Class.forName("com.mysql.cj.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testing_db","root", "rootroot");
 
-    // prepare statement
-    PreparedStatement ps=con.prepareStatement("insert into register values('Sam', 'sam19@gmail.com')");
+    // prepare sql statement
+    PreparedStatement ps=con.prepareStatement("INSERT INTO register VALUES('Sam', 'sam19@gmail.com')");
 
     //Execute the staement
     ps.executeUpdate();
