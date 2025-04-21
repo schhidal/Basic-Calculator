@@ -9,6 +9,8 @@ public class JavaMySqlConnection {
     public static void main(String[] args) {
         
 try{
+    
+    //add jdbc driver for mysql
     Class.forName("com.mysql.cj.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testing_db","root", "rootroot");
 
